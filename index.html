@@ -3,22 +3,14 @@
 <body>
 <h1>Hello World</h1>
 <p><script>
-let mic;
-let img;
-function preload() {
-  img = loadImage('Ginnie.png');
-}
 function setup() {
-  createCanvas(600, 400);
-  mic = new p5.AudioIn(); 
-  mic.start();
-frameRate (10);
+  createCanvas(400, 400);
 }
-function draw() { 
-fill(150, random(0,250), 240);
-  let vol = mic.getLevel();
-  //rect(random(width), 100, 50 , vol*400);
-image(img, random(0,250),100,vol*400, vol*400 )
+
+function draw() {
+    if (mouseIsPressed) {  
+    ellipse(random(width), mouseY, sin(millis()/1000)*50 + 50);
+  }
 }
   </script></p>
 </body>
