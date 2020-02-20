@@ -2,8 +2,8 @@
 <html>
 <body>
 <h1>Hello World</h1>
-<p>let mic;
-
+<p><script>
+let mic;
 let img;
 function preload() {
   img = loadImage('Ginnie.png');
@@ -19,6 +19,7 @@ fill(150, random(0,250), 240);
   let vol = mic.getLevel();
   //rect(random(width), 100, 50 , vol*400);
 image(img, random(0,250),100,vol*400, vol*400 )
-}</p>
+}
+  </script></p>
 </body>
 </html>
