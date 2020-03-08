@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
+<title>Angelika's GitHub Page to present Processing projects</title>
 <body>
 <h1>Hello World</h1>
 <p>My page will come soon</p>
 <script>
 let mic;
-
 let img;
 function preload() {
   img = loadImage('Ginnie.png');
-}
-function setup() {
+}function setup() {
   createCanvas(600, 400);
   mic = new p5.AudioIn(); 
-  mic.start();
+  mic.start(); 
 frameRate (10);
 }
 function draw() { 
