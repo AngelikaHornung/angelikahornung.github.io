@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html>
-<title>Angelika's GitHub Page to present Processing projects</title>
-<body>
-<h1>Hello World</h1>
-<p>My page will come soon</p>
-<script>
-let mic;
-let img;
-function preload() {
-  img = loadImage('Ginnie.png');
-}function setup() {
-  createCanvas(600, 400);
-  mic = new p5.AudioIn(); 
-  mic.start(); 
-frameRate (10);
-}
-function draw() { 
-fill(150, random(0,250), 240);
-  let vol = mic.getLevel();
-  //rect(random(width), 100, 50 , vol*400);
-image(img, random(width),100,vol*400, vol*400 )
-}
-</script>
+  <head>
+    <meta charset="utf-8">
+    <title>Angelika's GitHub Page to present Processing projects</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>My page will come soon</p>
 </body>
 </html>
